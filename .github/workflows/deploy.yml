@@ -25,6 +25,6 @@ jobs:
           username: ${{ secrets.EC2_USER }}  
           key: ${{ secrets.EC2_SSH_KEY }}  
           script: |  
-            cd /var/www/my-app  
+            cd /var/www/app.py 
             git pull  
-            systemctl restart my-app  
+            systemctl restart app.py 
